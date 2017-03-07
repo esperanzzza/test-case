@@ -1,0 +1,20 @@
+{
+  "name": "test-case",
+  "version": "1.0.0",
+  "description": "test-case",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esperanzzza/test-case.git"
+  },
+  "author": "Veronika Telychko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esperanzzza/test-case/issues"
+  },
+  "homepage": "https://github.com/esperanzzza/test-case#readme"
+}
