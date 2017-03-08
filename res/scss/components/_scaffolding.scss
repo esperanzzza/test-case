@@ -7,7 +7,6 @@ body {
     font-size: $font-size--base;
     color: $color-black;
     background-color: $color-white;
-    max-width: 2624px;
 }
 
 ul {
@@ -39,7 +38,7 @@ a:hover, a:focus {
 }
 
 .background-wrapper {
-	background: $color-white url(../img/bg-image.jpg) no-repeat;
+	  background: $color-white url(../img/bg-image.jpg) no-repeat center;
   	width: 100%;
   	height: 100%;
   	background-size: cover;
@@ -62,6 +61,10 @@ a:hover, a:focus {
   .fa-caret-right {
     color: $color-nav-link;
     margin-left: 10px;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
   }
 .fa-shopping-cart {
   display: inline-block;
@@ -70,4 +73,8 @@ a:hover, a:focus {
   padding: 8px;
   color: $color-white;
   margin-right: 20px;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
 }

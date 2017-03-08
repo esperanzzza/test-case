@@ -1,0 +1,115 @@
+.promo {
+	padding-top: 40px;
+	background: $color-bg-promo;
+
+&__info {
+	position: relative;
+	background: $color-bg-promo;
+	z-index: 10;
+}
+&__features-list {
+	padding-left: 50%;
+	position: relative;
+
+	@media (max-width: $screen-sm) {
+	padding-left: 10%;
+	}
+
+&:before {
+	position: absolute;
+	content:"";
+	background: url(../img/bottle-image.png) no-repeat center;
+	width: 397px;
+	height: 718px;
+	top: -150px;
+	left: -100px;
+
+@media (min-width: $screen-xs) and (max-width: 575px) {
+	background: url(../img/bottle-image-sm.png) no-repeat center;
+	width: 101px;
+	height: 181px;
+}
+@media (min-width: $screen-sm) and (max-width: $screen-xl) {
+	background: url(../img/bottle-image-md.png) no-repeat center;
+	width: 285px;
+	height: 516px;
+	top: -100px;
+}
+}
+}
+
+&__features-list-item {
+	margin-bottom: 40px;
+}
+&__features-heading {
+	font-size: $font-size--feature;
+	color: $color-dark-brown;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+
+	@media (max-width: $screen-xl) {
+		font-size: $font-size--base;
+	}
+
+&-small {
+	display: block;
+	font-size: $font-size--sm;
+	color: $color-text-grey;
+	text-transform: none;
+}
+}
+&__features-number {
+	font-size: $font-size--number;
+	color: $color-light-brown;
+	text-transform: none;
+
+@media (max-width: $screen-xl) {
+		font-size: $font-size--base;
+	}
+}
+&__wrapper {
+	display: flex;
+	padding-left: 7%;
+	margin-bottom: 55px;
+
+@media (max-width: $screen-sm) {
+		flex-direction: column;
+	}
+
+}
+&__question {
+	font-size: 1.875rem; 
+	color: $color-black;
+	width: 170px;
+	margin-right: 3%;
+}
+
+&__more-info {
+	font-size: 5.438rem;
+	color: $color-text-dark;
+
+ @media (max-width: $screen-xl) {
+		font-size: $font-size--md;
+		width: 300px;
+	}
+}
+&__more-link {
+	display: inline-block;
+	transform: translateX(55%);
+	font-size: $font-size-btn;
+	color: $color-black;
+	text-transform: uppercase;
+	text-align: center;
+	border: 10px solid $color-black;
+	padding: 40px 50px;
+
+ @media (min-width: $screen-xs) and (max-width: 767px) {
+		font-size: $font-size--base;
+		padding: 10px 20px;
+		transform: none;
+	}
+@media (min-width: $screen-md) and (max-width: $screen-xl) {
+	 	padding: 30px 40px;
+}
+}
+}
