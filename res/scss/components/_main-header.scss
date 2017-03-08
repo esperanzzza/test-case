@@ -1,0 +1,72 @@
+.main-header {
+	padding-top: 125px;
+
+&__header-menu {
+	margin-bottom: 45px;
+}
+
+&__header-menu-heading {
+	font-family: $font-family--base;
+	font-size: $font-size--header-heading;
+	color: $color-white;
+	text-transform: uppercase;
+
+	@media (max-width: $screen-xl) {
+		font-size: 3.125rem;
+	}
+}
+&__header-menu-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3%;
+	@media (max-width: $screen-md) {
+		display: block;
+	}
+
+&:last-child {
+	margin-right: 0;
+}
+}
+&__header-menu-link {
+	font-size: $font-size--sm;
+	font-weight: 300;
+	color: $color-white;
+	text-transform: uppercase;
+
+@media (max-width: screen-xl) {
+	font-size: $font-size--xs;
+}
+}
+&__header-menu-language {
+	display: inline-block;
+	border: 2px solid $color-white;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100px;
+}
+&__header-menu-language-text {
+	text-transform: uppercase;
+	color: $color-white;
+}
+&__slogan {
+	margin-bottom: 40px;
+	font-size: $font-size--h1;
+	color: $color-white;
+	text-transform: uppercase;
+
+	@media (min-width: $screen-xs) and (max-width: 575px) {
+	font-size: $font-size--mobile-slogan;
+}
+	@media (min-width: $screen-sm) and (max-width: $screen-xl) {
+	font-size: $font-size--md;
+}
+}
+&__slogan-indent {
+	display: block;
+	margin-left: 8%;
+}
+&__slogan-company-name {
+	display: block;
+	margin-left: 13%;
+}
+}
