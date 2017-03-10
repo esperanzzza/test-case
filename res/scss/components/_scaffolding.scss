@@ -20,13 +20,14 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
-a:hover, a:focus {
+a, a:hover, a:focus {
 	text-decoration: none;
 }
 .container-centered {
 	margin: 0 auto;
 	width: $container-centered;
-  @media (max-width: $screen-xl) {
+
+  @media (max-width: 2000px) {
     width: $container-centered-md;
   }
 }

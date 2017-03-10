@@ -5,4 +5,13 @@
    	margin-bottom: 100px;
    }
 
+&__main-navigation {
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: $screen-xl) {
+	flex-direction: column;
+	}
+}
+
 }
