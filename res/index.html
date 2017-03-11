@@ -28,7 +28,7 @@
         </div>
         <nav class="main-nav">
           <ul class="main-nav__main-navigation">
-            <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Нагроудобрение<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+            <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Нагро-удобрение<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
             <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Биодизель<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
             <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Силко<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
             <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Интернет-магазин<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
@@ -43,6 +43,7 @@
 		</div>
 		<section class="promo">
 		<div class="container-centered">
+		<div class="promo__wrapper">
 		<div class="promo__info">
 		<ul class="promo__features-list">
 		<li class="promo__features-list-item">
@@ -64,14 +65,38 @@
 			<h3 class="promo__features-number">в 3-10 раз</h3>
 		</li>
 		</ul>
-		<div class="promo__wrapper">
+		<div class="promo__text-wrapper">
 		<p class="promo__question">Хотите трали-вали ла-лала?</p>
-		<h2 class= "promo__more-info">Узнайте о нагро больше!</h2>
+		<h2 class= "promo__more-info">Узнайте<br> о нагро больше!</h2>
 		</div>
 		<a class="promo__more-link" href="#">Узнать больше</a>
 		</div>
 		<div class="promo__form">
-		
+		<form class="calculate-form" action="/echo" method="post">
+		 <fieldset>
+            <legend>
+            <h2 class="form__heading">Посчитайте прибыль</h2>
+            <p class="form__slogan">Добриво эффективнее химии</p>
+            </legend>
+            <p>Выберите культуру</p>
+            <select>
+    		<option selected value="Пшеница">Пшеница ~ 3100 грн / т</option>
+    		<option value="Пшено">Овес ~ 2100 грн / т</option>
+    		<option value="Пшено">Ячмень ~ 2500 грн / т</option>
+    		</select>
+    		<p>Урожайность, ц/га</p>
+            <input type="number" name="quantity" placeholder="20">
+            <p>Стоимость хим. удобрения, грн/га</p>
+            <input type="number" name="quantity" placeholder="3000">
+            <p>Посевная площадь, га</p>
+            <input type="number" name="quantity" placeholder="10">
+            <h3 class="form__revenue">Прибыль от добрива
+            <b class="form__revenue-sum">50 000</b>
+            <span lass="form__revenue-currency">грн</span>
+            </h3>
+          </fieldset>
+          </form>
+		</div>
 		</div>
 		</div>
 		</section>
