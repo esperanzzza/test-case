@@ -1,7 +1,8 @@
 .main-header {
 	
 	&__menu {
-		margin-bottom: 45px;
+		padding-top: 120px;
+		margin-bottom: 30px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -13,10 +14,11 @@
 		}
 	}
 
-	&__menu-heading {
+	&__site-heading {
 		font-family: $font-family--base;
 		font-size: $font-size--header-heading;
 		color: $color-white;
+		font-stretch: condensed;
 		text-transform: uppercase;
 		margin-right: 10%;
 
@@ -26,17 +28,31 @@
 	}
 	&__menu-list {
 		flex-grow: 1;
+
+
+	@media (max-width: $screen-lg) {
+		width: 100%;
+	}	
 	}
+
 	&__menu-item {
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 3%;
 
+	@media (max-width: $screen-lg) {
+		padding: 5px 0;
+		display: block;
+		}
+
 	&:last-child {
 		margin-right: 0;
 	}
 	}
+
 	&__menu-link {
+		display: block;
+		padding: 10px 0;
 		font-size: $font-size--sm;
 		font-weight: 300;
 		color: $color-white;
@@ -46,25 +62,24 @@
 		font-size: $font-size--xs;
 	}
 	}
+
 	&__menu-language {
 		display: inline-block;
-		border: 2px solid $color-white;
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 60px;
+		border: 3px solid $color-white;
+		padding: 10px 15px;
+		width: 90px;
 	}
+
 	&__menu-language-text {
 		text-transform: uppercase;
 		color: $color-white;
 	}
-	&__dropdown-menu, 
-	&__dropdown-menu-item {
-		display: none;
-	}
+
 	&__slogan {
 		margin-bottom: 40px;
 		font-size: $font-size--h1;
 		color: $color-white;
+		font-stretch: condensed;
 		text-transform: uppercase;
 
 		@media (min-width: $screen-xs) and (max-width: 575px) {
@@ -74,6 +89,7 @@
 		font-size: $font-size--md;
 	}
 	}
+
 	&__slogan-indent {
 		display: block;
 		margin-left: 8%;

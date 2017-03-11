@@ -38,27 +38,14 @@ a, a:hover, a:focus {
   clear: both;
 }
 
-.background-wrapper {
+.body-wrapper {
+
 	  background: $color-white url(../img/bg-image.jpg) no-repeat center;
   	width: 100%;
   	height: 100%;
   	background-size: cover;
 }
 
-.navbar-default .navbar-nav>li:last-child {
-  background: linear-gradient(to bottom, $color-green, #383131);
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: $color-nav-link;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.875rem;
-
-  @media (max-width: $screen-xl) {
-    font-size: $font-size--sm;
-  }
-}
   .fa-caret-right {
     color: $color-nav-link;
     margin-left: 10px;
@@ -67,6 +54,7 @@ a, a:hover, a:focus {
     display: none;
   }
   }
+
 .fa-shopping-cart {
   display: inline-block;
   border: 2px solid $color-white;
@@ -79,3 +67,52 @@ a, a:hover, a:focus {
     display: none;
   }
 }
+
+  .fa-chevron-down {
+  color: $color-white;
+  margin-left: 13px;
+  }
+
+.hvr-underline-from-center {
+
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px transparent;
+              position: relative;
+              overflow: hidden;
+
+          @media (max-width: $screen-lg) {
+          display: none;
+        }
+
+            
+            &:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              left: 50%;
+              right: 50%;
+              bottom: 0;
+              background: $color-white;
+              height: 3px;
+              -webkit-transition-property: left, right;
+              transition-property: left, right;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+
+          @media (max-width: $screen-lg) {
+          display: none;
+        }
+            }
+
+            &:hover:before, 
+            &:focus:before, 
+            &:active:before {
+              left: 0;
+              right: 0;
+            }
+        }

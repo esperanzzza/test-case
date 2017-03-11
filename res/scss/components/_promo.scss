@@ -7,6 +7,7 @@
 	background: $color-bg-promo;
 	z-index: 10;
 }
+
 &__features-list {
 	padding-left: 50%;
 	position: relative;
@@ -25,9 +26,7 @@
 	left: -100px;
 
 @media (min-width: $screen-xs) and (max-width: 575px) {
-	background: url(../img/bottle-image-sm.png) no-repeat center;
-	width: 101px;
-	height: 181px;
+	display: none;
 }
 @media (min-width: $screen-sm) and (max-width: $screen-xl) {
 	background: url(../img/bottle-image-md.png) no-repeat center;
@@ -41,9 +40,11 @@
 &__features-list-item {
 	margin-bottom: 40px;
 }
+
 &__features-heading {
 	font-size: $font-size--feature;
 	color: $color-dark-brown;
+	font-stretch: condensed;
 	text-transform: uppercase;
 	margin-bottom: 25px;
 
@@ -58,6 +59,7 @@
 	text-transform: none;
 }
 }
+
 &__features-number {
 	font-size: $font-size--number;
 	color: $color-light-brown;
@@ -67,6 +69,7 @@
 		font-size: $font-size--base;
 	}
 }
+
 &__wrapper {
 	display: flex;
 	padding-left: 7%;
@@ -77,6 +80,7 @@
 	}
 
 }
+
 &__question {
 	font-size: 1.875rem; 
 	color: $color-black;
@@ -87,12 +91,14 @@
 &__more-info {
 	font-size: 5.438rem;
 	color: $color-text-dark;
+	font-stretch: condensed;
 
  @media (max-width: $screen-xl) {
 		font-size: $font-size--md;
 		width: 300px;
 	}
 }
+
 &__more-link {
 	display: inline-block;
 	transform: translateX(55%);
@@ -108,8 +114,10 @@
 		padding: 10px 20px;
 		transform: none;
 	}
+
 @media (min-width: $screen-md) and (max-width: $screen-xl) {
 	 	padding: 30px 40px;
 }
 }
+
 }
