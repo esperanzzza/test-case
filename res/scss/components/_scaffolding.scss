@@ -26,8 +26,8 @@ a, a:hover, a:focus {
 .container-centered {
 	margin: 0 auto;
 	width: $container-centered;
-
-  @media (max-width: 2000px) {
+  
+  @media (max-width: $screen-xl) {
     width: $container-centered-md;
   }
 }

@@ -1,5 +1,38 @@
-node_modules/
-bower_components/
+## Node.js
+lib-cov
+*.seed
 *.log
-Thumbs.db
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
+node_modules
+
+.idea/
+.vscode/
+
+## Bower
+src/components
+
+## Sass
+.sass-cache
+
+## OS X
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

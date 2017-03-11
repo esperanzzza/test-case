@@ -1,25 +1,40 @@
 'use strict';
 
-const gulp = require('gulp');
-const scss = require ('gulp-sass');
-const browserSync = require('browser-sync');
-const concat = require('gulp-concat');
-const sourcemaps = require('gulp-sourcemaps');
-const debug = require('gulp-debug');
-const gulpif = require('gulp-if');
-const uglify = require('gulp-uglify');
-const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+var gulp = require('gulp'),
+    sass = require ('gulp-sass'),
+    browserSync = require('browser-sync'),
+    concat = require('gulp-concat'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    debug = require('gulp-debug'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
+    rigger = require('gulp-rigger'),
+    isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
-gulp.task('sass', function(callback) {
-	return gulp.src('res/scss/**/*.scss')
-	.pipe(gulpif(isDevelopment, sourcemaps.init()))
-	.pipe(debug({title: 'src'}))
-	.pipe(scss())
-	.pipe(debug({title: 'sass'}))
-	.pipe(concat('main.css'))
-	.pipe(debug({title: 'concat'}))
-	.pipe(gulpif(isDevelopment, sourcemaps.write()))
-	.pipe(gulp.dest('res/css'))
+
+var autoprefixerOptions = {
+    browsers: ['last 2 versions', '> 5%', 'Firefox ESR', 'ie >= 10']
+};
+
+gulp.task('html', function () {
+    return gulp.src('./res/src/*.html')
+        .pipe(rigger())
+        .pipe(gulp.dest('./res'))
+        .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('scss', function(callback) {
+    return gulp.src('res/scss/**/*.scss')
+    .pipe(gulpif(isDevelopment, sourcemaps.init()))
+    .pipe(debug({title: 'src'}))
+    .pipe(sass())
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(debug({title: 'sass'}))
+    .pipe(concat('main.css'))
+    .pipe(debug({title: 'concat'}))
+    .pipe(gulpif(isDevelopment, sourcemaps.write()))
+    .pipe(gulp.dest('res/css'))
 });
 
 gulp.task('browser-sync', function() { 
@@ -40,11 +55,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('res/js')); 
 });
 
-
-gulp.task('watch', gulp.parallel('browser-sync', 'sass', 'scripts'), function() {
-    gulp.watch('res/sass/**/*.sass', ['sass']); 
-    gulp.watch('res/*.html', browserSync.reload); 
-    gulp.watch('res/js/**/*.js', browserSync.reload); 
+gulp.task('bs-reload', function () {
+    browserSync.reload();
 });
 
-gulp.task('default', gulp.series('watch'));
+gulp.task('default', ['browser-sync', 'html', 'scss', 'scripts'], function() {
+    gulp.watch('res/sass/**/*.scss', ['scss', 'bs-reload']); 
+    gulp.watch('res/src/**/*.html', ['html']); 
+    gulp.watch('res/js/**/*.js', ['bs-reload']); 
+});
