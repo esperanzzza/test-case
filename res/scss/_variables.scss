@@ -3,7 +3,9 @@
 // Variables for colors:
 $color-white: 						#ffffff;
 $color-green: 						#608a24;
-$color-dark-grey:					#f0eeef;
+$color-bg-form:						#f0eeef;
+$color-form-border: 				#a7a9ac;
+$color-form-decor: 					#d1d3d4;
 $color-light-grey: 					#e9e5e4;
 $color-black:						#000000;
 $color-text-dark:					#25383f;
@@ -13,6 +15,7 @@ $color-text-grey: 					#a7a9ac;
 $color-nav-link:					#6d6e71;
 $color-red: 						#d26441;
 $color-bg-promo: 					#f1f2f2;
+$errorMsgColor: 					$color-red;
 
 //Variables for font-size:
 $html-size--base: 					16px;
@@ -20,7 +23,7 @@ $font-size--sm: 					1.438rem; // 23px
 $font-size--xs: 					1rem; //16px
 $font-size--md: 					3.125rem; // 50px
 $font-size--base: 					1.875rem; //30px
-$font-size--mobile-slogan:			2.5rem; // 40px
+$font-size--mobile-slogan:			2.188rem; // 35px
 $font-size--h1:						7.813rem; // 125px
 $font-size--h2:						5.438rem; // 87.5px
 $font-size--form-heading:			4.688rem; // 75px
@@ -28,6 +31,7 @@ $font-size--header-heading:			6.563rem; // 105px
 $font-size--feature:				3.25rem; // 52px
 $font-size--number:					3.375rem; //54px	
 $font-size-btn: 					3rem; // 48px
+$font-size--revenue-sum: 			6.063rem; //97 px
 
 //Varibles for font-family:
 $font-family--base: 				"Roboto", "Arial", sans-serif;

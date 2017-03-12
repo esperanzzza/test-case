@@ -5,6 +5,23 @@
    	margin-bottom: 100px;
    }
 
+&__menu-toggle {
+        fill: $color-white;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: $screen-xl) {
+        display: block;
+
+        }
+    }
+
+    &__menu-close {
+        display: none;
+        cursor: pointer;
+        fill: $color-white;
+    }
+
 &__main-navigation {
 	display: flex;
 	justify-content: space-between;
@@ -12,8 +29,10 @@
 
 	@media (max-width: $screen-xl) {
 	flex-direction: column;
-	}
+	display: none;
 }
+}
+
 &__main-navigation-item {
 
 &:last-child {
