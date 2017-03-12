@@ -5,11 +5,10 @@
 &__wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 	@media (max-width: $screen-lg) {
 	flex-direction: column;
-	align-items: flex-start;
 	}
 }
 
@@ -17,14 +16,27 @@
 	position: relative;
 	background: $color-bg-promo;
 	z-index: 10;
+	width: 1540px;
+
+	@media (max-width: $screen-xl) {
+	width: 100%;
+	}
 }
 
 &__features-list {
-	padding-left: 50%;
+	padding-left: 35%;
 	position: relative;
 
-@media (min-width: $screen-xs) and (max-width: $screen-md) {
+@media (min-width: $screen-xs) and (max-width: 767px) {
 	padding-left: 7%;
+}
+
+@media (min-width: $screen-md) and (max-width: 1299px) {
+	padding-left: 60%;
+}
+
+@media (min-width: 1300px) and (max-width: $screen-xl) {
+	padding-left: 50%;
 }
 
 &:before {
@@ -84,7 +96,7 @@
 
 &__text-wrapper {
 	display: flex;
-	justify-content: flex-start;
+	align-items: flex-start;
 	padding-left: 7%;
 	margin-bottom: 55px;
 
@@ -96,20 +108,21 @@
 &__question {
 	font-size: 1.875rem; 
 	color: $color-black;
-	width: 170px;
-	margin-right: 3%;
+	width: 160px;
+	margin-right: 12%;
 }
 
 &__more-info {
 	font-size: 5.438rem;
 	color: $color-text-dark;
 	font-stretch: condensed;
-	margin-left: 10%;
+	margin-left: 3%;
+	text-transform: uppercase;
 
- @media (max-width: $screen-xl) {
+@media (max-width: $screen-xl) {
 		font-size: $font-size--md;
-		width: 300px;
 	}
+
 @media (max-width: $screen-md) {
 	margin-left: 0;
 }
@@ -117,6 +130,8 @@
 
 &__more-link {
 	display: inline-block;
+	margin-left: 33%;
+	margin-bottom: 80px;
 	font-size: $font-size-btn;
 	color: $color-black;
 	text-transform: uppercase;
@@ -124,9 +139,40 @@
 	border: 10px solid $color-black;
 	padding: 30px 5%;
 
- @media (max-width: $screen-xl) {
+@media (min-width: $screen-xs) and (max-width: 767px) {
+ 		margin-left: 7%;
+		font-size: $font-size--base;
+	}
+
+@media (min-width: $screen-md) and (max-width: 1399px) {
+ 		margin-left: 40%;
+		font-size: $font-size--base;
+	}
+
+@media (min-width: 1400px) and (max-width: $screen-xl) {
+ 		margin-left: 35%;
 		font-size: $font-size--base;
 	}
 }
+&__form {
+	width: 1084px;
 
+@media (max-width: $screen-xl) {
+	width: 100%;
+}
+}
+
+&__background {
+	margin-top: -50px;
+	background: $color-bg-promo url(../img/bg-wheat.jpg) no-repeat right bottom;
+  	width: 100%;
+  	height: 100%;
+  	background-size: contain;
+
+  	@media (max-width: $screen-lg) {
+	background: url(../img/bg-wheat.jpg) no-repeat center;
+	background-size: cover;
+}
+
+}
 }
