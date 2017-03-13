@@ -74,9 +74,14 @@
 		font-weight: 300;
 		color: $color-white;
 		text-transform: uppercase;
+		
 
 	@media (max-width: screen-xl) {
 		font-size: $font-size--xs;
+	}
+
+	&:hover, &:focus {
+		color: $color-red;
 	}
 	}
 

@@ -168,6 +168,8 @@
 	display: inline-block;
 	margin-left: 33%;
 	margin-bottom: 80px;
+	font-family: $font-family--btn;
+	font-weight: 700;
 	font-size: $font-size-btn;
 	color: $color-black;
 	text-transform: uppercase;
@@ -189,7 +191,16 @@
  		margin-left: 35%;
 		font-size: $font-size--base;
 	}
+
+&:hover {
+    background: $color-white;
 }
+
+&:focus {
+    opacity: 0.3;
+}
+}
+
 &__form {
 	width: 1084px;
 

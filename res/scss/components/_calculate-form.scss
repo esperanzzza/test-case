@@ -87,6 +87,10 @@
 &:last-child {
 	margin-bottom: 30px;
 }
+
+&:focus {
+  border: 1px solid $color-text-dark;
+}
 }
 
 &__revenue {

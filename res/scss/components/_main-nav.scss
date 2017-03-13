@@ -48,6 +48,10 @@
 	font-stetch: condensed;
 	text-transform: uppercase;
 
+&:hover, &:focus {
+	color: $color-dark-brown;
+}
+
 &:first-child {
 	padding-left: 10%;
 }

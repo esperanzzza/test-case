@@ -1,3 +1,11 @@
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helvetica-neue/helvetica.neue.bold.woff') format('woff'), url('../fonts/helvetica-neue/helvetica.neue.bold.woff2') format('woff2'), ('../fonts/helvetica-neue/helvetica.neue.bold.ttf') format('ttf'), ('../fonts/helvetica-neue/helvetica.neue.bold.eot') format('eot');
+}
+
+
 html {
     font-size: $html-size--base;
 }
@@ -155,8 +163,14 @@ option.calculate-form__value  {
 
   color: $color-text-grey;
   line-height: 1.3;
+
+
+&:focus {
+  border: 1px solid $color-text-dark;
+}
   
 }
+
 
 input.error {
   border: 1px dotted $color-red;
