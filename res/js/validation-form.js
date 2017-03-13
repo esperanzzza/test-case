@@ -1,18 +1,42 @@
+
 $(document).ready(function() {
+    $(".calculate-form").validate({
+        rules: {
 
-    $('.calculate-form').validate({
-        highlight: function(element, errorClass) {
-            $(element).fadeOut(function() {
-                $(element).fadeIn();
-            });
-        }
-    });
+            plant: {
+                required: true
+            },
 
-    $("calculate-form__field").rules("add", {
-        required: true,
+            fertility: {
+                number: true,
+                required: true
+            },
+
+            cost: {
+                number: true,
+                required: true
+            },
+            area: {
+                number: true,
+                required: true
+            }
+        },
         messages: {
-            required: "Please fill in this field"
+            plant: {
+                required: "Выберити сорт культуры"
+            },
+            fertility: {
+                number: "Значение должно быть цифровым",
+                required: "Укажите урожайность"
+            },
+            cost: {
+                number: "Укажите стоимость",
+                required: "Введите сайт"
+            },
+            area: {
+                number: "Значение должно быть цифровым",
+                required: "Укажите посевную площадь"
+            }
         }
     });
-
 });
