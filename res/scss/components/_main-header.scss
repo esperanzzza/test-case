@@ -39,6 +39,7 @@
         top: 120px;
         display: none;
 	}	
+	
 	@media (min-width: $screen-md) and (max-width: $screen-lg) {
 		position: absolute;
         z-index: 100;
@@ -139,6 +140,7 @@
 		display: block;
 		margin-left: 8%;
 	}
+
 	&__slogan-company-name {
 		display: block;
 		margin-left: 13%;
