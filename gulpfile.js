@@ -58,7 +58,8 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-            'bower_components/jquery/docs/jquery.min.js'
+        'res/libs/jquery/jquery-3.1.1.min.js', 
+        'res/libs/jquery/jquery.validate.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
