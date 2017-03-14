@@ -58,7 +58,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-            'bower_components/jquery/dist/jquery.min.js'
+            'bower_components/jquery/docs/jquery.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -78,7 +78,7 @@ gulp.task('default', ['browser-sync', 'html', 'scss', 'scripts'], function() {
 
 
 gulp.task('clean', function() {
-    return del.sync('dist');
+    return del.sync('docs');
 });
 
 gulp.task('img', function() {
@@ -91,25 +91,25 @@ gulp.task('img', function() {
             }],
             use: [pngquant()]
         }))) 
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('docs/img'));
 
 });
 
 gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
 
     var buildCss = gulp.src(['res/css/*.min.css', 'res/css/main.css'])
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('docs/css'))
 
 
     var buildFonts = gulp.src('res/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('docs/fonts'))
 
     var buildJs = gulp.src('res/js/**/*')
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('docs/js'))
 
 
     var buildHtml = gulp.src('res/*.html')
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 
 });
 
