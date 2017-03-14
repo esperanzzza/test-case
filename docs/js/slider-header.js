@@ -2,10 +2,6 @@ jQuery(document).ready(function($) {
     initBg();
 });
 
-jQuery(window).load(function() {
-
-});
-
 
 function initBg() {
     $(".main-header").backstretch([
