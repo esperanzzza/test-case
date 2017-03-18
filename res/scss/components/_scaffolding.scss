@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  Fonts
+\*------------------------------------*/
+
 @font-face {
   font-weight: 700;
   font-style: normal;
@@ -10,6 +14,10 @@ html {
     font-size: $html-size--base;
 }
 
+/*------------------------------------*\
+  Body styles
+\*------------------------------------*/
+
 body {
     font-family: $font-family--base;
     font-size: $font-size--base;
@@ -18,6 +26,10 @@ body {
     color: $color-black;
     background-color: $color-white;
 }
+
+/*------------------------------------*\
+  Main styles
+\*------------------------------------*/
 
 ul {
   list-style-type: none;
@@ -34,6 +46,11 @@ a, a:hover, a:focus {
 	text-decoration: none;
 }
 
+/*------------------------------------*\
+  Grid styles
+\*------------------------------------*/
+
+
 .container-centered {
 	margin: 0 auto;
 	width: $container-centered;
@@ -49,137 +66,142 @@ a, a:hover, a:focus {
   clear: both;
 }
 
-.body-wrapper {
-
-	  background: $color-white url(../img/bg-image.jpg) no-repeat center;
-  	width: 100%;
-  	height: auto;
+    .body-wrapper {
+    background: $color-white url(../img/bg-image.jpg) no-repeat center;
+    width: 100%;
+    height: auto;
     background-size: cover;
 }
 
-  .fa-caret-right {
-    color: $color-nav-link;
-    margin-left: 10px;
 
-  @media (max-width: $screen-sm) {
-    display: none;
-  }
-  }
+/*------------------------------------*\
+  Icon styles
+\*------------------------------------*/
+
+.fa-caret-right {
+    color: $color-nav-link;
+    margin-left: 5px;
+}
 
 .fa-shopping-cart {
-  display: inline-block;
-  border: 2px solid $color-white;
-  border-radius: 50%;
-  padding: 8px;
-  color: $color-white;
-  margin-right: 20px;
-
-  @media (max-width: $screen-sm) {
-    display: none;
-  }
+    display: inline-block;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    padding: 8px;
+    color: $color-white;
+    margin-right: 20px;
 }
 
-  .fa-chevron-down {
-  color: $color-white;
-  margin-left: 13px;
-  }
+
+/*------------------------------------*\
+  Animation styles
+\*------------------------------------*/
 
 .hvr-underline-from-center {
-
-              display: inline-block;
-              vertical-align: middle;
-              -webkit-transform: perspective(1px) translateZ(0);
-              transform: perspective(1px) translateZ(0);
-              box-shadow: 0 0 1px transparent;
-              position: relative;
-              overflow: hidden;
-
-            
-            &:before {
-              content: "";
-              position: absolute;
-              z-index: -1;
-              left: 50%;
-              right: 50%;
-              bottom: 0;
-              background: $color-white;
-              height: 3px;
-              -webkit-transition-property: left, right;
-              transition-property: left, right;
-              -webkit-transition-duration: 0.3s;
-              transition-duration: 0.3s;
-              -webkit-transition-timing-function: ease-out;
-              transition-timing-function: ease-out;
-
-          @media (max-width: $screen-lg) {
-          display: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: $color-white;
+        height: 3px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        @media (max-width: $screen-lg) {
+            display: none;
         }
-            }
-
-            &:hover:before, 
-            &:focus:before, 
-            &:active:before {
-              left: 0;
-              right: 0;
-            }
-        }
-
-fieldset
-                   {
-          border: none;
-          outline:none;
+    }
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        left: 0;
+        right: 0;
+    }
 }
 
-select, input {
-  width: 100%;
+
+/*------------------------------------*\
+  Form styles
+\*------------------------------------*/
+
+fieldset {
+    border: none;
+    outline: none;
+}
+
+select,
+input {
+    width: 100%;
 }
 
 input[type='text']::-webkit-input-placeholder {
-  color: $color-text-grey;
-  line-height: 1.3;
+    color: $color-text-grey;
+    line-height: 1.3;
 }
 
 input[type='text']::-moz-placeholder {
-  color: $color-text-grey;
-  line-height: 1.3;
+    color: $color-text-grey;
+    line-height: 1.3;
 }
 
 input[type='text']:-moz-placeholder {
-  color: $color-text-grey;
-  line-height: 1.3;
+    color: $color-text-grey;
+    line-height: 1.3;
 }
 
 input[type='text']:-ms-input-placeholder {
-  color: $color-text-grey;
-  line-height: 1.3;
+    color: $color-text-grey;
+    line-height: 1.3;
 }
 
-.modal-error {
-  animation: shake 0.6s;
+select.calculate-form__field,
+option.calculate-form__value {
+    color: $color-text-grey;
+    line-height: 1.3;
+    &:focus {
+        border: 1px solid $color-text-dark;
+    }
 }
-
-select.calculate-form__field, 
-option.calculate-form__value  {
-
-  color: $color-text-grey;
-  line-height: 1.3;
-
-
-&:focus {
-  border: 1px solid $color-text-dark;
-}
-  
-}
-
 
 input.error {
-  border: 1px dotted $color-red;
+    border: 1px dotted $color-red;
 }
 
 label.error,
 select.error {
-  color: $color-red;
-  margin-top: -20px;
-  text-align: center;
-  font-weight: 300;
+    color: $color-red;
+    margin-top: -20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/*------------------------------------*\
+  Adaptive
+\*------------------------------------*/
+
+@media (max-width: 1299px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    .hide-desktop {
+        display: none;
+    }
+
 }

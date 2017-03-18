@@ -1,130 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1">
-		<title>Test case</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<div class="body-wrapper">
-			<header class="main-header"><!--beginning of the header element-->
-				<div class="container-centered">
-					<div class="main-header__menu">
-						<h1 class="main-header__site-heading">Добриво</h1>
-						<svg class="main-header__menu-toggle" version="1.1" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007"><path d="M1.137 0C.51 0 0 .428 0 1.01v1.98C0 3.55.494 4 1.138 4h47.67c.63 0 1.14-.427 1.14-1.01V1.01c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.003C.51 10.003 0 10.43 0 11.013v1.98c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.002c-.627 0-1.137.43-1.137 1.01v1.982c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.56-.495-1.012-1.14-1.012H1.14z"/><path d="M1.137 0C.51 0 0 .428 0 1.01v1.98C0 3.55.494 4 1.138 4h47.67c.63 0 1.14-.427 1.14-1.01V1.01c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.003C.51 10.003 0 10.43 0 11.013v1.98c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.002c-.627 0-1.137.43-1.137 1.01v1.982c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.56-.495-1.012-1.14-1.012H1.14z"/>
-					</svg>
-					<svg class="main-header__menu-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.866px" height="23.866px" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
-						<path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
-							s-0.39,0.079-0.53,0.22l-8.56,8.56L3.373,0.22c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313c-0.293,0.293-0.293,0.768,0,1.061
-							l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.061l2.093,2.094c0.141,0.141,0.331,0.22,0.53,0.22
-							c0.199,0,0.39-0.079,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.141,0.331,0.22,0.53,0.22s0.39-0.079,0.53-0.22l2.093-2.094
-							c0.293-0.293,0.293-0.768,0-1.061L15.087,11.933z" />
-						</svg>
-						<ul class="main-header__menu-list">
-							<li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Оплата и доставка</a></li>
-							<li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Новости</a></li>
-							<li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Справочник</a></li>
-							<li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Сертификат</a></li>
-						</ul>
-						<div class="main-header__menu-language"><span class="main-header__menu-language-text">Ru</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
-					</div>
-				</div>
-				<nav class="main-nav"><!--beginning of the nav element-->
-					<svg class="main-nav__menu-toggle" version="1.1" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007"><path fill="#ffffff" d="M1.137 0C.51 0 0 .428 0 1.01v1.98C0 3.55.494 4 1.138 4h47.67c.63 0 1.14-.427 1.14-1.01V1.01c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.003C.51 10.003 0 10.43 0 11.013v1.98c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.002c-.627 0-1.137.43-1.137 1.01v1.982c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.56-.495-1.012-1.14-1.012H1.14z"/><path fill="#ffffff" d="M1.137 0C.51 0 0 .428 0 1.01v1.98C0 3.55.494 4 1.138 4h47.67c.63 0 1.14-.427 1.14-1.01V1.01c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.003C.51 10.003 0 10.43 0 11.013v1.98c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.558-.495-1.01-1.14-1.01H1.14zm0 10.002c-.627 0-1.137.43-1.137 1.01v1.982c0 .557.494 1.01 1.138 1.01h47.67c.63 0 1.14-.428 1.14-1.01v-1.98c0-.56-.495-1.012-1.14-1.012H1.14z"/>
-				</svg>
-				<svg class="main-nav__menu-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.866px" height="23.866px" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
-					<path id="path-1" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
-						s-0.39,0.079-0.53,0.22l-8.56,8.56L3.373,0.22c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313c-0.293,0.293-0.293,0.768,0,1.061
-						l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.061l2.093,2.094c0.141,0.141,0.331,0.22,0.53,0.22
-						c0.199,0,0.39-0.079,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.141,0.331,0.22,0.53,0.22s0.39-0.079,0.53-0.22l2.093-2.094
-						c0.293-0.293,0.293-0.768,0-1.061L15.087,11.933z" />
-					</svg>
-					<ul class="main-nav__main-navigation">
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Нагро-удобрение<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Биодизель<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Силко<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Интернет-магазин<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Вопросы-ответы<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Контакты<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-						<li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link main-nav__main-navigation-link--cart" href="#"><i class="main-navigation-link fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
-					</ul>
-				</nav><!--end of the nav element-->
-				<h2 class="main-header__slogan">Органическое<span class="main-header__slogan-indent">нано-удобрение</span><span class="main-header__slogan-company-name">Добриво</span></h2>
-			</div>
-		</header><!--end of the header element-->
-	</div>
-	<section class="promo"><!--beginning of the section 'promo'-->
-		<div class="promo__background">
-			<div class="container-centered">
-				<div class="promo__wrapper">
-					<div class="promo__info">
-						<ul class="promo__features-list">
-							<li class="promo__features-list-item">
-								<h2 class="promo__features-heading">Прирост урожая
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1">
+    <title>Test case</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <header class="main-header">
+            <!--beginning of the header element-->
+            <div class="container-centered">
+                <div class="main-header__menu">
+                    <h1 class="main-header__site-heading">Добриво</h1>
+                    <ul class="main-header__menu-list hide-mobile">
+                        <li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Оплата и доставка</a></li>
+                        <li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Новости</a></li>
+                        <li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Справочник</a></li>
+                        <li class="main-header__menu-item"><a class="main-header__menu-link hvr-underline-from-center" href="#">Сертификат</a></li>
+                    </ul>
+                    <select class="main-header__menu-language hide-mobile">
+                        <option selected="selected" value="ru">RU</option>
+                        <option value="ua">UA</option>
+                    </select>
+                    <button class="main-header__burger burger btn js__toggle hide-desktop">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+                <nav class="main-nav hide-mobile">
+                    <!--beginning of the nav element-->
+                    <ul class="main-nav__main-navigation">
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Нагро-удобрение<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Биодизель<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Силко<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Интернет-магазин<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Вопросы-ответы<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                        <li class="main-nav__main-navigation-item"><a class="main-nav__main-navigation-link" href="#">Контакты<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <div class="main-header__buttons">
+                        <a href="#" class="btn btn--cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a>
+                    </div>
+                </nav>
+                <!--end of the nav element-->
+                <h2 class="main-header__slogan">Органическое<span class="main-header__slogan-indent">нано-удобрение</span><span class="main-header__slogan-company-name">Добриво</span></h2>
+            </div>
+        </header>
+        <!--end of the header element-->
+    </div>
+    <section class="promo">
+        <!--beginning of the section 'promo'-->
+        <div class="promo__background">
+            <div class="container-centered">
+                <div class="promo__wrapper">
+                    <div class="promo__info">
+                        <ul class="promo__features-list">
+                            <li class="promo__features-list-item">
+                                <h2 class="promo__features-heading">Прирост урожая
 								<span class="promo__features-heading-small">в сравнении с химическими удобрениями</span>
 								</h2>
-								<h3 class="promo__features-number">30%-250%</h3>
-							</li>
-							<li class="promo__features-list-item">
-								<h2 class="promo__features-heading">Экономия
+                                <h3 class="promo__features-number">30%-250%</h3>
+                            </li>
+                            <li class="promo__features-list-item">
+                                <h2 class="promo__features-heading">Экономия
 								<span class="promo__features-heading-small">химических удобрений в хозяйстве</span>
 								</h2>
-								<h3 class="promo__features-number">до 70%</h3>
-							</li>
-							<li class="promo__features-list-item">
-								<h2 class="promo__features-heading">Рост корневой
+                                <h3 class="promo__features-number">до 70%</h3>
+                            </li>
+                            <li class="promo__features-list-item">
+                                <h2 class="promo__features-heading">Рост корневой
 								<span class="promo__features-heading-small">системы растений при использовании</span>
 								</h2>
-								<h3 class="promo__features-number">в 3-10 раз</h3>
-							</li>
-						</ul>
-						<div class="promo__text-wrapper">
-							<p class="promo__question">Хотите трали-вали ла-лала?</p>
-							<h2 class= "promo__more-info">Узнайте<br> о нагро больше!</h2>
-						</div>
-						<a class="promo__more-link" href="#">Узнать больше</a>
-					</div>
-					<div class="promo__form"><!--beginning of the form element-->
-						<form class="calculate-form" action="/echo" method="post">
-							<div class="calculate-form__content">
-								<fieldset>
-									<h2 class="calculate-form__heading">Посчитайте прибыль</h2>
-									<p class="calculate-form__slogan"><span class="calculate-form__slogan-keyword">Добриво</span> эффективнее химии<p>
-									<p class="calculate-form__category">Выберите культуру</p>
-									<select class="calculate-form__field" name="plant">
-										<option class="calculate-form__value" value="Пшеница">Пшеница ≈ 3100 грн / т</option>
-										<option class="calculate-form__value" value="Пшено">Овес ≈ 2100 грн / т</option>
-										<option class="calculate-form__value" value="Пшено">Ячмень ~ 2500 грн / т</option>
-									</select>
-									<p class="calculate-form__category">Урожайность, ц/га</p>
-									<input class="calculate-form__field" type="text" name="fertility" placeholder="20" data-validation="number" data-validation-allowing="float"
-									data-validation-decimal-separator=",">
-									<p class="calculate-form__category">Стоимость хим. удобрения, грн/га</p>
-									<input class="calculate-form__field" type="text" name="cost" placeholder="3000" data-validation="number" data-validation-allowing="float">
-									<p class="calculate-form__category">Посевная площадь, га</p>
-									<input class="calculate-form__field" type="text" name="area" placeholder="10" data-validation="number" data-validation-allowing="float"
-									data-validation-decimal-separator=",">
-									<h3 class="calculate-form__revenue">Прибыль от добрива
+                                <h3 class="promo__features-number">в 3-10 раз</h3>
+                            </li>
+                        </ul>
+                        <div class="promo__text-wrapper">
+                            <p class="promo__question">Хотите трали-вали ла-лала?</p>
+                            <h2 class="promo__more-info">Узнайте<br> о нагро больше!</h2>
+                        </div>
+                        <a class="promo__more-link" href="#">Узнать больше</a>
+                    </div>
+                    <div class="promo__form">
+                        <!--beginning of the form element-->
+                        <form class="calculate-form" action="/echo" method="post">
+                            <div class="calculate-form__content">
+                                <fieldset>
+                                    <h2 class="calculate-form__heading">Посчитайте прибыль</h2>
+                                    <p class="calculate-form__slogan"><span class="calculate-form__slogan-keyword">Добриво</span> эффективнее химии
+                                        <p>
+                                            <p class="calculate-form__category">Выберите культуру</p>
+                                            <select class="calculate-form__field" name="plant">
+                                                <option class="calculate-form__value" value="Пшеница">Пшеница ≈ 3100 грн / т</option>
+                                                <option class="calculate-form__value" value="Пшено">Овес ≈ 2100 грн / т</option>
+                                                <option class="calculate-form__value" value="Пшено">Ячмень ~ 2500 грн / т</option>
+                                            </select>
+                                            <p class="calculate-form__category">Урожайность, ц/га</p>
+                                            <input class="calculate-form__field" type="text" name="fertility" placeholder="20" data-validation="number" data-validation-allowing="float" data-validation-decimal-separator=",">
+                                            <p class="calculate-form__category">Стоимость хим. удобрения, грн/га</p>
+                                            <input class="calculate-form__field" type="text" name="cost" placeholder="3000" data-validation="number" data-validation-allowing="float">
+                                            <p class="calculate-form__category">Посевная площадь, га</p>
+                                            <input class="calculate-form__field" type="text" name="area" placeholder="10" data-validation="number" data-validation-allowing="float" data-validation-decimal-separator=",">
+                                            <h3 class="calculate-form__revenue">Прибыль от добрива
 									<b class="calculate-form__revenue-sum">50 000</b>
 									<span class="calculate-form__revenue-currency">грн</span>
 									</h3>
-								</fieldset>
-							</div>
-						</form><!--end of the form element-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!--end of the section 'promo'-->
-	<script src="./js/libs.min.js"></script>
-	<script src="./js/jquery.backstretch.min.js"></script>
-	<script src="./js/slider-header.js"></script>
-	<script src="./js/menu-toggle.js"></script>
-	<script src="./js/validation-form.js"></script>
+                                </fieldset>
+                            </div>
+                        </form>
+                        <!--end of the form element-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of the section 'promo'-->
+    <section class="body__modal modal">
+        <!--beginning of the modal section-->
+        <div class="modal__overlay"></div>
+        <div class="menu-mobile">
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Оплата и доставка</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Новости</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Справочние</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Сертификат</a>
+                </li>
+            </ul>
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Нагро-удобрение</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Биодизель</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Силко</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Интернет-магазин</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Контакты</a>
+                </li>
+            </ul>
+            <select class="menu-mobile__language">
+                <option selected="selected" value="ru">RU</option>
+                <option value="ua">UA</option>
+            </select>
+            <div class="menu-mobile__buttons">
+                <a href="#" class="btn btn--cart menu-mobile__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a>
+            </div>
+        </div>
+        <div class="modal__control">
+            <button class="burger burger--modal burger--close btn js__toggle">
+                <span class="burger__line burger__line--close"></span>
+                <span class="burger__line burger__line--close"></span>
+                <span class="burger__line burger__line--close"></span>
+            </button>
+        </div>
+    </section>
+    <!--end of the modal section-->
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./js/slider-header.js"></script>
+    <script src="./js/menu-toggle.js"></script>
+    <script src="./js/validation-form.js"></script>
 </body>
+
 </html>
